@@ -1,0 +1,42 @@
+<!-- kaigyou.html -->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>改行を \\n に変換</title>
+  <link rel="stylesheet" href="kaigyou.css" />
+</head>
+<body>
+  <header class="header">
+    <nav class="nav">
+      <a href="../index.html" class="nav__link">ホームへ戻る</a>
+    </nav>
+    <h1 class="title">改行を「\n」に変換</h1>
+    <p class="subtitle">入力の改行文字をすべて「\n」に置き換えて出力します。</p>
+  </header>
+
+  <main class="container">
+    <section class="panel">
+      <label for="input" class="label">入力テキスト</label>
+      <textarea id="input" class="textarea" placeholder="ここにテキストを貼り付けてください"></textarea>
+
+      <div class="controls">
+        <button id="convertBtn" class="btn">変換</button>
+        <button id="clearBtn" class="btn btn--secondary">クリア</button>
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="output-header">
+        <span class="label">出力</span>
+        <button id="copyBtn" class="btn btn--primary">コピー</button>
+      </div>
+      <textarea id="output" class="textarea textarea--output" readonly placeholder="ここに出力が表示されます"></textarea>
+      <p id="copyStatus" class="status" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <script src="kaigyou.js"></script>
+</body>
+</html>
